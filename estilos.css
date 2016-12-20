@@ -1,0 +1,89 @@
+/*Descripciones Generales*/
+body{
+  background-color: #02010a;
+  font-family: "Dancing Script";
+  font-size: 20px;
+}
+img{
+  box-shadow: 2px 2px 2px 2px #02010a;
+  width: 50%;
+  height: 50%;
+}
+/*Cabecera*/
+header{
+  background-color: #5b7989;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  color: white;
+  text-shadow: 2px 2px #02010a;
+  text-align: left;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+a{
+  color: white;
+  float: right;
+}
+.enlace {
+  text-decoration: none;
+}
+/* imagen central*/
+
+.avion{
+  text-align: center;
+  background-color: #82c3a6;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+/*imagen secundaria*/
+
+.imagen_secundaria {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  background-color: #d5c75f;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.paisaje {
+  flex-grow: 1;
+}
+.retrato {
+  flex-grow: 1;
+}
+p a{
+  color: black;
+  float: center;
+}
+
+/*Pie de pagina*/
+footer{
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #C6d5c5;
+  border-top: solid 1px #C6d5c5;
+}
+.contenido2{
+  display: flex;
+}
+.Contacto{
+  flex-grow: 4;
+}
+.Terminos{
+  flex-grow: 4;
+}
+.Redes{
+  flex-grow: 4;
+}
+.Derechos{
+  flex-grow: 4;
+}
+#imagen2>img:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px 2px 2px #82c3a6;
+}
+#imagen3>img:hover{
+  transform: translate(20px,-5px);
+  box-shadow: 2px 2px 2px 2px #82c3a6;
+}
