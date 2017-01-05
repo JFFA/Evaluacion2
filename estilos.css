@@ -2,12 +2,61 @@
 body{
   background-color: #02010a;
   font-family: "Dancing Script";
-  font-size: 20px;
+  font-size: 1em;
 }
 img{
   box-shadow: 2px 2px 2px 2px #02010a;
-  width: 50%;
-  height: 50%;
+  width: 100%;
+}
+.CG{
+  width: 900px;
+  margin: 0 auto;
+}
+@keyframes miAnimacion{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: 5%;
+  }
+  100%{
+    margin-top: 0;
+  }
+}
+@-webkit-keyframes miAnimacion{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: 5%;
+  }
+  100%{
+    margin-top: 0;
+  }
+}
+.img11{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+.img22{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.img33{
+  -webkit-filter: sepia(100%);
+  filter: sepia(90%);
+}
+.img44{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.img55{
+  -webkit-filter: none;
+  filter: none;
+}
+.img66{
+  -webkit-filter:grayscale(100%);
+  filter: grayscale(100%);
 }
 /*Cabecera*/
 header{
@@ -20,9 +69,20 @@ header{
   padding-bottom: 20px;
   padding-top: 20px;
 }
+.Ba{
+  display: flex;
+}
+.c1{
+  width: 75%;
+}
+.c2{
+  width: 25%;
+}
+#banner{
+    animation: miAnimacion 1.5s;
+}
 a{
   color: white;
-  float: right;
 }
 .enlace {
   text-decoration: none;
@@ -68,16 +128,16 @@ footer{
   display: flex;
 }
 .Contacto{
-  flex-grow: 4;
+    width: 25%;
 }
 .Terminos{
-  flex-grow: 4;
+    width: 25%;
 }
 .Redes{
-  flex-grow: 4;
+    width: 25%;
 }
 .Derechos{
-  flex-grow: 4;
+    width: 25%;
 }
 #imagen2>img:hover{
   transform: rotate(10deg);
@@ -86,4 +146,110 @@ footer{
 #imagen3>img:hover{
   transform: translate(20px,-5px);
   box-shadow: 2px 2px 2px 2px #82c3a6;
+}
+/*pagina 2 y 3*/
+.contenido3{
+  display: flex;
+  text-align: center;
+  width: 100%;
+  background-color: #d5c75f;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.contenido4{
+  display: flex;
+  text-align: center;
+  width: 100%;
+  background-color: #d5c75f;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.Redes>p>img{
+  width: 10%;
+}
+/* Mover tamaño pag 1 y footer*/
+@media all and (max-width: 900px) {
+  .CG{
+    width: 100%;
+  }
+  .Ba{
+    display: inline;
+  }
+  .c1{
+    order: 1;
+    text-align: center;
+    width: 100%;
+  }
+  .c2{
+    order: 2;
+    text-align: center;
+    width: 100%;
+  }
+  .imagen_secundaria {
+  display: inline;
+  }
+  .paisaje{
+		order: 1;
+  }
+  .retrato{
+		order: 2;
+  }
+  .retrato,.paisaje{
+    text-align: center;
+    width: 100%;
+    background-color: #d5c75f;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .contenido2{
+  display: inline;
+  }
+  .Contacto{
+		width: 100%;
+		order: 1;
+  }
+  .Terminos{
+		width: 100%;
+		order: 2;
+  }
+  .Redes{
+		width: 100%;
+		order: 3;
+  }
+  .Derechos{
+		width: 100%;
+		order: 4;
+  }
+/* Mover tamaño pag 2 y 3*/
+  .contenido3{
+    display: inline;
+  }
+  .img1{
+		order: 1;
+  }
+  .img2{
+		order: 2;
+  }
+  .img3{
+		order: 3;
+  }
+  .contenido4{
+    display: inline;
+  }
+  .img4{
+		order: 1;
+  }
+  .img5{
+		order: 2;
+  }
+  .img6{
+		order: 3;
+  }
+  .img1,.img2,.img3,.img4,.img5,.img6{
+    text-align: center;
+    width: 100%;
+    background-color: #d5c75f;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
 }
